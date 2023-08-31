@@ -13,12 +13,14 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.ani.weddingguestapp.data.view_models.home_view_model.HomeViewModel
 import com.ani.weddingguestapp.data.view_models.home_view_model.factory.HomeViewModelFactory
+import com.ani.weddingguestapp.domain.repositories.home.HomeRepository
 import com.ani.weddingguestapp.ui.screens.home.widgets.GuestsCard
 
 @Composable
 fun HomeScreen(navController: NavController) {
 
-    val viewModel = viewModel<HomeViewModel>(factory = HomeViewModelFactory())
+    val viewModel =
+        viewModel<HomeViewModel>(factory = HomeViewModelFactory(repository = HomeRepository()))
 
     LazyColumn(
         modifier = Modifier.fillMaxHeight(),

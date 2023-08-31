@@ -47,12 +47,11 @@ android {
 
 dependencies {
 
-    def nav_version = "2.7.1"
-//    def lifecycle_version = "2.6.1"
+    def nav_version = "2.5.1"
 
 
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
@@ -65,5 +64,4 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation("androidx.navigation:navigation-compose:$nav_version")
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
-//    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
 }
