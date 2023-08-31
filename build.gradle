@@ -12,3 +12,11 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+//tasks.withType(KotlinCompile).configureEach {
+//    kotlinOptions {
+//        freeCompilerArgs += [
+//                "-Xjvm-default=all",
+//        ]
+//    }
+//}
