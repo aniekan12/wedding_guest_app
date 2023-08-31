@@ -13,8 +13,8 @@ import com.ani.weddingguestapp.domain.repositories.home.HomeRepository
 class HomeViewModel(repository: HomeRepository) : ViewModel() {
     var guestsLists by mutableStateOf(
         mutableStateListOf(
-            Guests(guestID = "", guestName = "", seatNumber = "", phoneNumber = ""),
-            Guests(guestID = "", guestName = "", seatNumber = "", phoneNumber = ""),
+            Guests(guestID = "1", guestName = "ani", seatNumber = "12", phoneNumber = ""),
+            Guests(guestID = "2", guestName = "sam", seatNumber = "22", phoneNumber = ""),
         )
     )
 
