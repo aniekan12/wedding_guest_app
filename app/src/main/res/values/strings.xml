@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Wedding Guest App</string>
     <string name="wedding_guests_string">Wedding Guests</string>
+    <string name="name">Name</string>
+    <string name="seat_number">Seat Number</string>
+
 
 </resources>
