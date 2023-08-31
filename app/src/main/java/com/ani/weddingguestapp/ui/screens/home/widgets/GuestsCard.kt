@@ -15,6 +15,7 @@ import com.ani.weddingguestapp.ui.theme.Typography
 @Composable
 fun GuestsCard(guests: Guests) {
     Card(
+        elevation = 5.dp,
         modifier = Modifier
             .fillMaxWidth()
             .height(100.dp)
