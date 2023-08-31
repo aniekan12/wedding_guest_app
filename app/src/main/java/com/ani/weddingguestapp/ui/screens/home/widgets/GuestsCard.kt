@@ -1,4 +1,4 @@
-package com.ani.weddingguestapp.ui.screens.widgets
+package com.ani.weddingguestapp.ui.screens.home.widgets
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

@@ -4,17 +4,19 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.ani.weddingguestapp.navigation.routes.ScreenRoutes
+import com.ani.weddingguestapp.data.view_models.home_view_model.HomeViewModel
+import com.ani.weddingguestapp.ui.screens.home.HomeScreen
+
 
 @Composable
 fun Navigation() {
-    val navController = rememberNavController()
+     val navController = rememberNavController()
     NavHost(
         navController = navController,
         startDestination = Screen.HomeScreen.route,
     ) {
         composable(route=Screen.HomeScreen.route){
-
-        }
+            HomeScreen(navController = navController )
+        } 
     }
 }
