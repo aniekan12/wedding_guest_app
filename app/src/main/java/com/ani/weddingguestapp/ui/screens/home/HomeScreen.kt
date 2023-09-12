@@ -26,6 +26,7 @@ import com.ani.weddingguestapp.ui.theme.white
 @Composable
 fun HomeScreen(navController: NavController) {
 
+
     val viewModel =
         viewModel<HomeViewModel>(factory = HomeViewModelFactory(repository = HomeRepository()))
 
