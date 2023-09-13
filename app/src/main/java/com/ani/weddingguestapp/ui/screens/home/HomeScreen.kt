@@ -12,16 +12,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.ani.weddingguestapp.data.view_models.home_view_model.HomeViewModel
 import com.ani.weddingguestapp.data.view_models.home_view_model.factory.HomeViewModelFactory
-//import com.ani.weddingguestapp.data.view_models.home_view_model.factory.HomeViewModelFactory
 import com.ani.weddingguestapp.domain.repositories.home.HomeRepository
 import com.ani.weddingguestapp.ui.screens.home.widgets.GuestsCard
-import com.ani.weddingguestapp.ui.theme.white
+import com.ani.weddingguestapp.ui.theme.White
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -31,12 +28,6 @@ fun HomeScreen(navController: NavController) {
         viewModel<HomeViewModel>(factory = HomeViewModelFactory(repository = HomeRepository()))
 
     Scaffold(
-        floatingActionButtonPosition = FabPosition.End,
-        floatingActionButton = {
-            FloatingActionButton(onClick = { /*TODO*/ }) {
-                Icon(imageVector = Icons.Filled.Add, contentDescription = "add fab")
-            }
-        }
     ) {
         LazyColumn(
             modifier = Modifier.fillMaxHeight(),
@@ -57,7 +48,7 @@ fun HomeScreen(navController: NavController) {
             }
             items(viewModel.guestsLists.size) { index ->
                 GuestsCard(guests = viewModel.guestsLists[index])
-                Divider(color = white, modifier = Modifier.padding(top = 10.dp))
+                Divider(color = White, modifier = Modifier.padding(top = 10.dp))
             }
         }
 
